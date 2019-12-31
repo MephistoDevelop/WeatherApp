@@ -28,6 +28,59 @@ Javascript with Webpack project from [The Odin Project curriculum](https://www.t
 To use this project you will need to download this repository and put in on your computer.
 after you will need to install webpack and npm to run correctlly this project.
 
+in `package.json` file on the rules we are going to put this:
+
+> "scripts": {
+> "test": "echo \"Error: no test specified\" && exit >1",
+> "build": "webpack --mode production",
+> "builddev": "webpack --mode development",
+> "start": "webpack-dev-server --mode development >--open"
+> }
+
+in `webpack.config.js` file we are going to put this config to use live-sync browser reloaded automatly using `npm run start` :
+
+const path = require('path');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
+module.exports = {
+entry: './src/index.js',
+output: {
+filename: 'main.js',
+path: path.resolve(\_\_dirname, 'dist'),
+},
+watch: true,
+module: {
+rules: [
+{
+test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+use: ['file-loader'],
+},
+],
+},
+};
+
+module.exports = {
+watch: true,
+plugins: [
+new BrowserSyncPlugin({
+host: 'localhost',
+port: 3001,
+files: [
+'./dist/*.html',
+'./dist/*.js',
+'./dist/*.css',
+'./src/*.js',
+'./src/img/*.jpg',
+],
+server: { baseDir: ['dist'] },
+}),
+],
+};
+
 ### Deployment
 
 To deploy the application and see it on the browser you can use npm to do that task on the server provider by webpack. to run the live server you will need to open your project folder terminal and run this commands:
