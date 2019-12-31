@@ -31,8 +31,10 @@ after you will need to install webpack and npm to run correctlly this project.
 ### Deployment
 
 To deploy the application and see it on the browser you can use npm to do that task on the server provider by webpack. to run the live server you will need to open your project folder terminal and run this commands:
-run `npm install`
-run `npm run build`
+`npm install`
+`npm run build`
+`npm i -D webpack-dev-server`
+`npm i browser-sync --save`
 
 ## Authors
 
