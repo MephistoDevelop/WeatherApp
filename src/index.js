@@ -1,6 +1,8 @@
-function component() {
-  const element = document.createElement('div');
-  return element;
-}
+import showNavbar from './navbar';
+import showContent from './contentContainer';
+(() => {
+  const mainContainer = document.getElementById('content');
+  mainContainer.appendChild(showNavbar());
 
-document.body.appendChild(component());
+  showContent();
+})();
