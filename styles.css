@@ -1,0 +1,13 @@
+body {
+  background-image: url(./img/weather.jpg);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content {
+  height: 50px;
+  background-color: rgba(0, 30, 130, 0.4);
+  margin: 10px 20px;
+}
