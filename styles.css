@@ -6,8 +6,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#content {
+#navcontent {
   height: 50px;
-  background-color: rgba(0, 30, 130, 0.4);
-  margin: 10px 20px;
+  background-color: rgba(0, 30, 230, 0.4);
+  margin: 10px 50px;
+}
+
+#data-container {
+  height: 500px;
+  margin: 2% 20%;
+  background-color: rgba(0, 30, 230, 0.4);
 }
