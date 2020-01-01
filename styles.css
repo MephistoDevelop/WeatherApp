@@ -7,13 +7,22 @@ body {
   background-size: cover;
 }
 #navcontent {
-  height: 50px;
+  height: 32px;
   background-color: rgba(0, 30, 230, 0.4);
   margin: 10px 50px;
+  display: flex;
+}
+
+#navcontent {
+  justify-content: center;
 }
 
 #data-container {
   height: 500px;
   margin: 2% 20%;
   background-color: rgba(0, 30, 230, 0.4);
+}
+
+#search-box {
+  width: 70%;
 }
