@@ -1,3 +1,5 @@
+import createGridDays from './gridDays';
+
 function showContent() {
   const contentContainer = document.createElement('div');
   const descriptionContainer = document.createElement('div');
@@ -21,6 +23,7 @@ function showContent() {
   textdescriptionContainer.appendChild(createSunriseText());
   textdescriptionContainer.appendChild(createSunsetText());
   gifcontainer.appendChild(createImage());
+  contentContainer.appendChild(createGridDays());
 }
 
 function createtempText() {
@@ -154,6 +157,7 @@ function createImage() {
   image.alt = 'weather image';
   image.src = './img/animated/day.svg';
   image.style.width = '170px';
+  image.style.minHeight = '170px';
   imgContainer.appendChild(image);
 
   mainContainer.appendChild(imgContainer);
