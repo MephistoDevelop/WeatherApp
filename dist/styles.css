@@ -6,6 +6,38 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#description-container {
+  background-color: red;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+#gif-container {
+  background-color: orange;
+  width: 30%;
+  height: 100%;
+}
+
+.inner-descriptionContainer {
+  width: 100%;
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  border-bottom: 3px solid black;
+  border-bottom-style: dashed;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0px;
+}
+
+#data-container {
+  display: flow-root;
+  height: 500px;
+  margin: 2% 20%;
+  background-color: rgba(0, 30, 230, 0.3);
+}
+
 #navcontent {
   height: 52px;
   background-color: rgba(0, 30, 230, 0.3);
@@ -18,13 +50,25 @@ body {
   justify-content: center;
 }
 
-#data-container {
-  height: 500px;
-  margin: 2% 20%;
-  background-color: rgba(0, 30, 230, 0.3);
-}
-
 #search-box {
   width: 70%;
   height: 20px;
+}
+
+#temp-container {
+  background-color: blue;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-description {
+  background-color: brown;
+  width: 30%;
+  height: max-content;
+}
+
+#text-temp {
+  color: white;
 }
