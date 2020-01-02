@@ -23,10 +23,25 @@ function showContent() {
 }
 
 function createtempText() {
-  const textTemp = document.createElement('h1');
-  textTemp.id = 'text-temp';
-  textTemp.textContent = '0° C';
-  return textTemp;
+  const tempC = document.createElement('div');
+  const ubicationC = document.createElement('div');
+  const numberC = document.createElement('div');
+  const textTempNumber = document.createElement('span');
+  const textTempFormat = document.createElement('span');
+
+  ubicationC.textContent = 'City,Subcity';
+  textTempFormat.textContent = '°F';
+  textTempFormat.id = 'temp-format';
+  numberC.id = 'number-container';
+  textTempFormat.className = 'text-temp';
+  textTempNumber.className = 'text-temp';
+  ubicationC.id = 'location-text';
+  textTempNumber.textContent = '0';
+  numberC.appendChild(textTempNumber);
+  numberC.appendChild(textTempFormat);
+  tempC.appendChild(numberC);
+  tempC.appendChild(ubicationC);
+  return tempC;
 }
 
 function createhumidityText() {
@@ -34,10 +49,6 @@ function createhumidityText() {
   const descriptionCairPressure = document.createElement('div');
   const humidityText = document.createElement('div');
   const humidityData = document.createElement('div');
-  const airpressureText = document.createElement('div');
-  const windSpeedText = document.createElement('div');
-  const sunriseText = document.createElement('div');
-  const sunsetText = document.createElement('div');
 
   descriptionChumidity.className = 'inner-descriptionContainer';
   descriptionCairPressure.className = 'inner-descriptionContainer';
