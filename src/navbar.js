@@ -12,7 +12,7 @@ function showNavbar() {
   toggletempContainer.id = 'toggle-temp';
   element.id = 'navcontent';
   inputSearch.id = 'search-box';
-  inputSearch.placeholder = 'Enter your city name';
+  inputSearch.placeholder = 'Enter Your City Name (eg. Jalisco,MX)';
   document.body.appendChild(element);
   element.appendChild(inputSearch);
   element.appendChild(toggletempContainer);
@@ -22,6 +22,7 @@ function showNavbar() {
     if (e.keyCode === 13) {
       let city = document.getElementById('search-box');
       alert('Enter pressed: ' + city.value);
+      city.value = '';
     }
   };
   return element;

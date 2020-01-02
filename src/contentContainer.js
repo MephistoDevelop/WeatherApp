@@ -20,6 +20,7 @@ function showContent() {
   textdescriptionContainer.appendChild(createWindspeedText());
   textdescriptionContainer.appendChild(createSunriseText());
   textdescriptionContainer.appendChild(createSunsetText());
+  gifcontainer.appendChild(createImage());
 }
 
 function createtempText() {
@@ -30,7 +31,7 @@ function createtempText() {
   const textTempFormat = document.createElement('span');
 
   ubicationC.textContent = 'City,Subcity';
-  textTempFormat.textContent = '°F';
+  textTempFormat.textContent = '°C';
   textTempFormat.id = 'temp-format';
   numberC.id = 'number-container';
   textTempFormat.className = 'text-temp';
@@ -139,5 +140,25 @@ function createSunsetText() {
   descriptionCsunset.appendChild(sunsetData);
 
   return descriptionCsunset;
+}
+
+function createImage() {
+  const mainContainer = document.createElement('div');
+  const imgContainer = document.createElement('div');
+  const dataContainer = document.createElement('div');
+  const image = document.createElement('img');
+
+  dataContainer.textContent = 'Tipe  of weather';
+  imgContainer.id = 'inside-gif-container';
+  dataContainer.id = 'weather-type';
+  image.alt = 'weather image';
+  image.src = './img/animated/day.svg';
+  image.style.width = '170px';
+  imgContainer.appendChild(image);
+
+  mainContainer.appendChild(imgContainer);
+  mainContainer.appendChild(dataContainer);
+
+  return mainContainer;
 }
 export default showContent;
