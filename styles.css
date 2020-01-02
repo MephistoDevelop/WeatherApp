@@ -7,13 +7,11 @@ body {
   background-size: cover;
 }
 #description-container {
-  background-color: red;
-  margin: 30px;
+  margin: 30px 0;
   display: flex;
   justify-content: center;
 }
 #gif-container {
-  background-color: orange;
   width: 30%;
   height: 100%;
 }
@@ -43,6 +41,11 @@ body {
   font-size: 18px;
   font-weight: bolder;
 }
+
+#inside-gif-container {
+  display: flex;
+  justify-content: center;
+}
 #navcontent {
   height: 52px;
   background-color: rgba(0, 30, 230, 0.3);
@@ -70,10 +73,10 @@ body {
   display: flex;
   align-self: end;
   padding: 5px;
+  font-weight: bold;
 }
 
 #temp-container {
-  background-color: blue;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -81,12 +84,19 @@ body {
 }
 
 #text-description {
-  background-color: brown;
   width: 30%;
-  height: max-content;
 }
 
 .text-temp {
   color: white;
   font-size: 38px;
+}
+
+#weather-type {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
 }
