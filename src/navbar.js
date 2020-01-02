@@ -18,6 +18,12 @@ function showNavbar() {
   element.appendChild(toggletempContainer);
   toggletempContainer.appendChild(radioC);
   toggletempContainer.appendChild(radioF);
+  inputSearch.onkeypress = function(e) {
+    if (e.keyCode === 13) {
+      let city = document.getElementById('search-box');
+      alert('Enter pressed: ' + city.value);
+    }
+  };
   return element;
 }
 
