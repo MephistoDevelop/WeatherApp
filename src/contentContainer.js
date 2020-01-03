@@ -33,12 +33,13 @@ function createtempText() {
   const textTempNumber = document.createElement('span');
   const textTempFormat = document.createElement('span');
 
-  ubicationC.textContent = 'City,Subcity';
-  textTempFormat.textContent = '°C';
+  ubicationC.textContent = 'Country,City';
+  textTempFormat.textContent = '°F';
   textTempFormat.id = 'temp-format';
   numberC.id = 'number-container';
   textTempFormat.className = 'text-temp';
   textTempNumber.className = 'text-temp';
+  textTempNumber.id = 'general-temp';
   ubicationC.id = 'location-text';
   textTempNumber.textContent = '0';
   numberC.appendChild(textTempNumber);
@@ -58,10 +59,11 @@ function createhumidityText() {
   descriptionCairPressure.className = 'inner-descriptionContainer';
 
   humidityText.textContent = 'Humidity: ';
-  humidityData.textContent = '0%';
+  humidityData.textContent = '0 %';
+  humidityData.id = 'humidity-text';
 
-  humidityText.style.width = '85%';
-  humidityData.style.width = '15%';
+  humidityText.style.width = '65%';
+  humidityData.style.width = '35%';
 
   descriptionChumidity.appendChild(humidityText);
   descriptionChumidity.appendChild(humidityData);
@@ -77,10 +79,11 @@ function createAirPressureText() {
   descriptionCair.className = 'inner-descriptionContainer';
 
   airpressureText.textContent = 'Air Pressure: ';
-  airpressureData.textContent = '0%';
+  airpressureData.textContent = '0 hPa';
+  airpressureData.id = 'airPressure-text';
 
-  airpressureText.style.width = '85%';
-  airpressureData.style.width = '15%';
+  airpressureText.style.width = '65%';
+  airpressureData.style.width = '35%';
 
   descriptionCair.appendChild(airpressureText);
   descriptionCair.appendChild(airpressureData);
@@ -96,10 +99,11 @@ function createWindspeedText() {
   descriptionCwind.className = 'inner-descriptionContainer';
 
   windspeedText.textContent = 'Wind Speed: ';
-  windspeedData.textContent = '0%';
+  windspeedData.textContent = '0 m/s';
+  windspeedData.id = 'wind-speed-text';
 
-  windspeedText.style.width = '85%';
-  windspeedData.style.width = '15%';
+  windspeedText.style.width = '65%';
+  windspeedData.style.width = '35%';
 
   descriptionCwind.appendChild(windspeedText);
   descriptionCwind.appendChild(windspeedData);
@@ -114,11 +118,11 @@ function createSunriseText() {
 
   descriptionCsunrise.className = 'inner-descriptionContainer';
 
-  sunriseText.textContent = 'Sunrise: ';
-  sunriseData.textContent = '0%';
-
-  sunriseText.style.width = '85%';
-  sunriseData.style.width = '15%';
+  sunriseText.textContent = 'Min Temp.: ';
+  sunriseData.textContent = '0 °F';
+  sunriseData.id = 'min-temp-text';
+  sunriseText.style.width = '65%';
+  sunriseData.style.width = '35%';
 
   descriptionCsunrise.appendChild(sunriseText);
   descriptionCsunrise.appendChild(sunriseData);
@@ -133,11 +137,11 @@ function createSunsetText() {
 
   descriptionCsunset.className = 'inner-descriptionContainer';
 
-  sunsetText.textContent = 'Sunset: ';
-  sunsetData.textContent = '0%';
-
-  sunsetText.style.width = '85%';
-  sunsetData.style.width = '15%';
+  sunsetText.textContent = 'Max-Temp.: ';
+  sunsetData.textContent = '0 °F';
+  sunsetData.id = 'max-temp-text';
+  sunsetText.style.width = '65%';
+  sunsetData.style.width = '35%';
 
   descriptionCsunset.appendChild(sunsetText);
   descriptionCsunset.appendChild(sunsetData);
@@ -156,6 +160,7 @@ function createImage() {
   dataContainer.id = 'weather-type';
   image.alt = 'weather image';
   image.src = './img/animated/day.svg';
+  image.id = 'main-image';
   image.style.width = '170px';
   image.style.minHeight = '170px';
   imgContainer.appendChild(image);
