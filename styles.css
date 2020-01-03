@@ -8,8 +8,19 @@ body {
 }
 .day-container {
   width: 19%;
-  background-color: yellow;
-  margin: 0 2px;
+  /*background-color: yellow;*/
+}
+
+.day-description {
+  position: relative;
+  bottom: 10%;
+}
+
+.format-grid {
+  width: 50%;
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
 }
 #description-container {
   margin-left: 0px;
@@ -24,11 +35,11 @@ body {
   height: 100%;
 }
 #grid-container {
-  background-color: blue;
-  height: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  bottom: 10%;
 }
 .inner-descriptionContainer {
   width: 100%;
@@ -65,7 +76,14 @@ body {
   display: flex;
   align-items: center;
 }
+.imageday-container {
+  display: flex;
+  justify-content: center;
+}
 
+.image-day {
+  width: 150px;
+}
 #navcontent {
   justify-content: center;
 }
@@ -73,6 +91,14 @@ body {
   display: flex;
   justify-content: center;
   margin: 10px 0;
+}
+
+.number-grid {
+  width: 50%;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: right;
 }
 
 #search-box {
@@ -102,6 +128,16 @@ body {
 .text-temp {
   color: white;
   font-size: 38px;
+}
+
+.titleday {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  position: relative;
+  top: 15%;
 }
 
 #weather-type {
