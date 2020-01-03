@@ -87,6 +87,9 @@ function showNavbar() {
       getDataDay3();
       getDataDay4();
       getDataDay5();
+      togleRadioC();
+      document.getElementById('radio-c').checked = true;
+      document.getElementById('radio-f').checked = false;
     }
   };
   document.getElementById('radio-c').checked = true;
@@ -366,6 +369,6 @@ function getDataDay5() {
       alert('Error in query , try again when your conections improve. ');
     });
 
-  document.getElementById('search-box').innerText = '';
+  document.getElementById('search-box').value = '';
 }
 export default showNavbar;
