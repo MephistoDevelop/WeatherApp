@@ -92,6 +92,7 @@ body {
 
 .image-day {
   width: 150px;
+  height: 150px;
 }
 #max-temp-text {
   padding-left: 25%;

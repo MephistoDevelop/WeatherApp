@@ -256,7 +256,7 @@ function getDataDay4() {
           date = '',
           weather = '';
 
-        date = result['list'][24]['dt_txt'];
+        date = result['list'][31]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -268,8 +268,8 @@ function getDataDay4() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][24]['main']['temp'];
-        weather = result['list'][24]['weather'][0]['main'];
+        temp = result['list'][31]['main']['temp'];
+        weather = result['list'][31]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day4');
         const weatherC = document.getElementById('title-day4');
         tempC.innerText = temp | 0;
@@ -300,7 +300,7 @@ function getDataDay5() {
           date = '',
           weather = '';
 
-        date = result['list'][30]['dt_txt'];
+        date = result['list'][38]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -312,8 +312,8 @@ function getDataDay5() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][30]['main']['temp'];
-        weather = result['list'][30]['weather'][0]['main'];
+        temp = result['list'][38]['main']['temp'];
+        weather = result['list'][38]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day5');
         const weatherC = document.getElementById('title-day5');
         tempC.innerText = temp | 0;
