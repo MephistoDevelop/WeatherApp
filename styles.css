@@ -72,6 +72,7 @@ body {
   font-size: 18px;
   font-weight: bolder;
   text-align: center;
+  text-shadow: 0px 0px 3px black;
 }
 
 #inside-gif-container {
@@ -84,6 +85,8 @@ body {
   margin: 10px 20%;
   display: flex;
   align-items: center;
+  color: white;
+  font-weight: bold;
 }
 .imageday-container {
   display: flex;
@@ -92,7 +95,7 @@ body {
 
 .image-day {
   width: 150px;
-  height: 150px;
+  min-height: 130px;
 }
 #max-temp-text {
   padding-left: 25%;
@@ -115,6 +118,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   text-align: right;
+  text-shadow: 0px 0px 3px black;
 }
 
 #search-box {
@@ -140,6 +144,7 @@ body {
 #text-description {
   width: 50%;
   padding-left: 3%;
+  text-shadow: 0px 0px 3px black;
 }
 
 .text-temp {
@@ -148,6 +153,7 @@ body {
 }
 
 .titleday {
+  text-shadow: 0px 0px 3px black;
   display: flex;
   justify-content: center;
   color: white;
@@ -164,6 +170,7 @@ body {
   text-align: center;
   position: relative;
   bottom: 30px;
+  text-shadow: 0px 0px 3px black;
 }
 
 #wind-speed-text {
@@ -189,6 +196,9 @@ body {
   }
   #navcontent {
     margin: 2% 5%;
+  }
+  .titleday {
+    font-size: 16px;
   }
   #weather-type {
     font-size: 14px;
