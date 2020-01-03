@@ -28,7 +28,7 @@ body {
   margin-left: 0px;
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid rgba(0, 30, 230, 0.8);
+  border-bottom: 5px solid rgba(50, 50, 250, 0.5);
   margin: 5% 4%;
 }
 
@@ -38,13 +38,16 @@ body {
 #gif-container {
   width: 30%;
   height: 100%;
+  position: relative;
+  bottom: 20px;
+  right: 10px;
 }
 #grid-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  bottom: 10%;
+  bottom: 21px;
 }
 
 #humidity-text {
@@ -63,8 +66,9 @@ body {
 
 #data-container {
   display: flow-root;
-  margin: 2% 20%;
+  margin: 0 20%;
   background-color: rgba(0, 30, 230, 0.3);
+  border-radius: 15px;
 }
 
 #location-text {
@@ -87,6 +91,7 @@ body {
   align-items: center;
   color: white;
   font-weight: bold;
+  border-radius: 15px;
 }
 .imageday-container {
   display: flex;
@@ -96,6 +101,10 @@ body {
 .image-day {
   width: 150px;
   min-height: 130px;
+}
+#mainTemp-container {
+  position: relative;
+  bottom: 11%;
 }
 #max-temp-text {
   padding-left: 25%;
