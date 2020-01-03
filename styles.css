@@ -1,10 +1,12 @@
 body {
   background-image: url(./img/weather.jpg);
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#airPressure-text {
+  padding-left: 25%;
 }
 .day-container {
   width: 19%;
@@ -28,10 +30,13 @@ body {
   justify-content: center;
   border-bottom: 5px solid rgba(0, 30, 230, 0.8);
   margin: 5% 4%;
-  padding-bottom: 30px;
+}
+
+#general-temp {
+  text-align: center;
 }
 #gif-container {
-  width: 33.3%;
+  width: 30%;
   height: 100%;
 }
 #grid-container {
@@ -41,12 +46,16 @@ body {
   position: relative;
   bottom: 10%;
 }
+
+#humidity-text {
+  padding-left: 25%;
+}
 .inner-descriptionContainer {
   width: 100%;
   display: flex;
   color: white;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 14px;
   justify-content: center;
   align-items: center;
   padding: 7px 0px;
@@ -54,7 +63,6 @@ body {
 
 #data-container {
   display: flow-root;
-  height: 450px;
   margin: 2% 20%;
   background-color: rgba(0, 30, 230, 0.3);
 }
@@ -63,6 +71,7 @@ body {
   color: white;
   font-size: 18px;
   font-weight: bolder;
+  text-align: center;
 }
 
 #inside-gif-container {
@@ -83,6 +92,12 @@ body {
 
 .image-day {
   width: 150px;
+}
+#max-temp-text {
+  padding-left: 25%;
+}
+#min-temp-text {
+  padding-left: 25%;
 }
 #navcontent {
   justify-content: center;
@@ -115,19 +130,20 @@ body {
 }
 
 #temp-container {
-  width: 33.3%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #text-description {
-  width: 33.3%;
+  width: 50%;
+  padding-left: 3%;
 }
 
 .text-temp {
   color: white;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 .titleday {
@@ -149,10 +165,11 @@ body {
   bottom: 30px;
 }
 
+#wind-speed-text {
+  padding-left: 25%;
+}
+
 @media screen and (min-width: 510px) and (max-width: 900px) {
-  body {
-    height: 600px;
-  }
   .day-container {
     width: 17%;
   }
@@ -175,9 +192,6 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 509px) {
-  body {
-    height: 700px;
-  }
   #data-container {
     margin: 2% 5%;
   }
