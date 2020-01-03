@@ -46,6 +46,7 @@ function createtempText() {
   numberC.appendChild(textTempFormat);
   tempC.appendChild(numberC);
   tempC.appendChild(ubicationC);
+  tempC.id = 'mainTemp-container';
   return tempC;
 }
 
