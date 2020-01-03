@@ -34,7 +34,7 @@ function createtempText() {
   const textTempFormat = document.createElement('span');
 
   ubicationC.textContent = 'Country,City';
-  textTempFormat.textContent = '°F';
+  textTempFormat.textContent = '°C';
   textTempFormat.id = 'temp-format';
   numberC.id = 'number-container';
   textTempFormat.className = 'text-temp';
