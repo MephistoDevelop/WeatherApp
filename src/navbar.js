@@ -6,6 +6,25 @@ import {
   togleimagesDay4,
   togleimagesDay5,
 } from './togleImages';
+import { togleRadioC, togleRadioF } from './radios';
+
+let lon = 0,
+  lat = 0,
+  humidity = 0,
+  airPressure = 0,
+  windSpeed = 0,
+  min = 0,
+  max = 0,
+  temp = 0,
+  name = '',
+  city = '',
+  weather = '',
+  tempR = 0,
+  tempday1 = 0,
+  tempday2 = 0,
+  tempday3 = 0,
+  tempday4 = 0,
+  tempday5 = 0;
 
 function showNavbar() {
   const element = document.createElement('div');
@@ -18,8 +37,34 @@ function showNavbar() {
 
   radioC.setAttribute('type', 'radio');
   radioC.setAttribute('name', 'radioC');
+  radioC.id = 'radio-c';
+  radioC.addEventListener('click', function() {
+    togleRadioC(
+      temp,
+      min,
+      max,
+      tempday1,
+      tempday2,
+      tempday3,
+      tempday4,
+      tempday5
+    );
+  });
   radioF.setAttribute('type', 'radio');
   radioF.setAttribute('name', 'radioF');
+  radioF.addEventListener('click', function() {
+    togleRadioF(
+      temp,
+      min,
+      max,
+      tempday1,
+      tempday2,
+      tempday3,
+      tempday4,
+      tempday5
+    );
+  });
+  radioF.id = 'radio-f';
   textC.textContent = '°C';
   textF.textContent = '°F';
   toggletempContainer.id = 'toggle-temp';
@@ -44,6 +89,7 @@ function showNavbar() {
       getDataDay5();
     }
   };
+  document.getElementById('radio-c').checked = true;
   return element;
 }
 
@@ -58,17 +104,6 @@ function getData() {
       let value = response.json();
 
       value.then(function(result) {
-        let lon = 0,
-          lat = 0,
-          humidity = 0,
-          airPressure = 0,
-          windSpeed = 0,
-          min = 0,
-          max = 0,
-          temp = 0,
-          name = '',
-          city = '',
-          weather = '';
         name = result['city']['name'];
         city = result['city']['country'];
         temp = result['list'][0]['main']['temp'];
@@ -94,6 +129,8 @@ function getData() {
         airPressureC.innerText = `${airPressure} hPa`;
         tempC.innerText = temp | 0;
         minTempC.innerText = `${min | 0} °C`;
+        min = `${min | 0}`;
+        max = `${max | 0}`;
         maxTempC.innerText = `${max | 0} °C`;
         weatherC.innerText = weather;
         changeImages(weather);
@@ -137,6 +174,7 @@ function getDataDay1() {
         var d = new Date(date);
         var dayName = days[d.getDay()];
         temp = result['list'][6]['main']['temp'];
+        tempday1 = temp;
         weather = result['list'][6]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day1');
         const weatherC = document.getElementById('title-day1');
@@ -327,5 +365,7 @@ function getDataDay5() {
       // Error :(
       alert('Error in query , try again when your conections improve. ');
     });
+
+  document.getElementById('search-box').innerText = '';
 }
 export default showNavbar;

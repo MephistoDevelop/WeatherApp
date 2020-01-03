@@ -24,7 +24,7 @@ function createGridDay1() {
   textNumberG1.className = 'number-grid';
   textNumberG1.id = 'temp-day1';
   textFormatG1.className = 'format-grid';
-  textFormatG1.textContent = '°F';
+  textFormatG1.textContent = '°C';
   titleDay1C.textContent = 'Day 1';
   titleDay1C.className = 'titleday';
   titleDay1C.id = 'title-day1';
@@ -60,7 +60,7 @@ function createGridDay2() {
   textNumberG1.className = 'number-grid';
   textNumberG1.id = 'temp-day2';
   textFormatG1.className = 'format-grid';
-  textFormatG1.textContent = '°F';
+  textFormatG1.textContent = '°C';
   titleDay1C.textContent = 'Day 2';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
@@ -94,7 +94,7 @@ function createGridDay3() {
   textNumberG1.id = 'temp-day3';
   imageDay1.id = 'image-day3';
   textFormatG1.className = 'format-grid';
-  textFormatG1.textContent = '°F';
+  textFormatG1.textContent = '°C';
   titleDay1C.textContent = 'Day 3';
   titleDay1C.className = 'titleday';
   titleDay1C.id = 'title-day3';
@@ -128,7 +128,7 @@ function createGridDay4() {
   textNumberG1.id = 'temp-day4';
   textNumberG1.className = 'number-grid';
   textFormatG1.className = 'format-grid';
-  textFormatG1.textContent = '°F';
+  textFormatG1.textContent = '°C';
   titleDay1C.textContent = 'Day 4';
   titleDay1C.className = 'titleday';
   titleDay1C.id = 'title-day4';
@@ -163,7 +163,7 @@ function createGridDay5() {
   textNumberG1.id = 'temp-day5';
   textNumberG1.className = 'number-grid';
   textFormatG1.className = 'format-grid';
-  textFormatG1.textContent = '°F';
+  textFormatG1.textContent = '°C';
   titleDay1C.textContent = 'Day 5';
   titleDay1C.className = 'titleday';
   titleDay1C.id = 'title-day5';
