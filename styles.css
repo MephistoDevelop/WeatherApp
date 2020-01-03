@@ -54,7 +54,7 @@ body {
 
 #data-container {
   display: flow-root;
-  height: 500px;
+  height: 450px;
   margin: 2% 20%;
   background-color: rgba(0, 30, 230, 0.3);
 }
@@ -137,7 +137,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   position: relative;
-  top: 15%;
+  top: 10%;
 }
 
 #weather-type {
