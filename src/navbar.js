@@ -50,7 +50,7 @@ function showNavbar() {
               city = '',
               weather = '';
             name = result['city']['name'];
-            city = result['city']['coord']['country'];
+            city = result['city']['country'];
             temp = result['list'][0]['main']['temp'];
             max = result['list'][0]['main']['temp_max'];
             min = result['list'][0]['main']['temp_min'];
@@ -73,9 +73,9 @@ function showNavbar() {
             humidityC.innerText = `${humidity} %`;
             locationC.innerText = `${name} , ${city}`;
             airPressureC.innerText = `${airPressure} hPa`;
-            tempC.innerText = temp;
-            minTempC.innerText = `${min} °F`;
-            maxTempC.innerText = `${max} °F`;
+            tempC.innerText = temp | 0;
+            minTempC.innerText = `${min | 0} °F`;
+            maxTempC.innerText = `${max | 0} °F`;
             weatherC.innerText = weather;
             togleImages(weather);
             console.log(
