@@ -1,25 +1,171 @@
 function createGridDays() {
   const gridContainer = document.createElement('div');
-  const day1C = document.createElement('div');
-  const day2C = document.createElement('div');
-  const day3C = document.createElement('div');
-  const day4C = document.createElement('div');
-  const day5C = document.createElement('div');
-
   gridContainer.id = 'grid-container';
-  day1C.className = 'day-container';
-  day2C.className = 'day-container';
-  day3C.className = 'day-container';
-  day4C.className = 'day-container';
-  day5C.className = 'day-container';
-
-  gridContainer.appendChild(day1C);
-  gridContainer.appendChild(day2C);
-  gridContainer.appendChild(day3C);
-  gridContainer.appendChild(day4C);
-  gridContainer.appendChild(day5C);
-
+  gridContainer.appendChild(createGridDay1());
+  gridContainer.appendChild(createGridDay2());
+  gridContainer.appendChild(createGridDay3());
+  gridContainer.appendChild(createGridDay4());
+  gridContainer.appendChild(createGridDay5());
   return gridContainer;
 }
 
+function createGridDay1() {
+  const day1C = document.createElement('div');
+  const titleDay1C = document.createElement('div');
+  const imageDay1C = document.createElement('div');
+  const imageDay1 = document.createElement('img');
+  const textgrid1Container = document.createElement('div');
+  const textNumberG1 = document.createElement('div');
+  const textFormatG1 = document.createElement('div');
+
+  day1C.className = 'day-container';
+
+  textNumberG1.textContent = '0';
+  textNumberG1.className = 'number-grid';
+  textFormatG1.className = 'format-grid';
+  textFormatG1.textContent = '°F';
+  titleDay1C.textContent = 'Day 1';
+  titleDay1C.className = 'titleday';
+  textgrid1Container.style.display = 'flex';
+  imageDay1.src = './img/animated/night.svg';
+  imageDay1.className = 'image-day';
+  imageDay1C.className = 'imageday-container';
+  textgrid1Container.className = 'day-description';
+  textgrid1Container.appendChild(textNumberG1);
+  textgrid1Container.appendChild(textFormatG1);
+  imageDay1C.appendChild(imageDay1);
+  day1C.appendChild(titleDay1C);
+  day1C.appendChild(imageDay1C);
+  day1C.appendChild(textgrid1Container);
+
+  return day1C;
+}
+
+function createGridDay2() {
+  const day1C = document.createElement('div');
+  const titleDay1C = document.createElement('div');
+  const imageDay1C = document.createElement('div');
+  const imageDay1 = document.createElement('img');
+  const textgrid1Container = document.createElement('div');
+  const textNumberG1 = document.createElement('div');
+  const textFormatG1 = document.createElement('div');
+
+  day1C.className = 'day-container';
+
+  textNumberG1.textContent = '0';
+  textNumberG1.className = 'number-grid';
+  textFormatG1.className = 'format-grid';
+  textFormatG1.textContent = '°F';
+  titleDay1C.textContent = 'Day 2';
+  titleDay1C.className = 'titleday';
+  textgrid1Container.style.display = 'flex';
+  imageDay1.src = './img/animated/night.svg';
+  imageDay1.className = 'image-day';
+  imageDay1C.className = 'imageday-container';
+  textgrid1Container.className = 'day-description';
+  textgrid1Container.appendChild(textNumberG1);
+  textgrid1Container.appendChild(textFormatG1);
+  imageDay1C.appendChild(imageDay1);
+  day1C.appendChild(titleDay1C);
+  day1C.appendChild(imageDay1C);
+  day1C.appendChild(textgrid1Container);
+
+  return day1C;
+}
+
+function createGridDay3() {
+  const day1C = document.createElement('div');
+  const titleDay1C = document.createElement('div');
+  const imageDay1C = document.createElement('div');
+  const imageDay1 = document.createElement('img');
+  const textgrid1Container = document.createElement('div');
+  const textNumberG1 = document.createElement('div');
+  const textFormatG1 = document.createElement('div');
+
+  day1C.className = 'day-container';
+
+  textNumberG1.textContent = '0';
+  textNumberG1.className = 'number-grid';
+  textFormatG1.className = 'format-grid';
+  textFormatG1.textContent = '°F';
+  titleDay1C.textContent = 'Day 3';
+  titleDay1C.className = 'titleday';
+  textgrid1Container.style.display = 'flex';
+  imageDay1.src = './img/animated/night.svg';
+  imageDay1.className = 'image-day';
+  imageDay1C.className = 'imageday-container';
+  textgrid1Container.className = 'day-description';
+  textgrid1Container.appendChild(textNumberG1);
+  textgrid1Container.appendChild(textFormatG1);
+  imageDay1C.appendChild(imageDay1);
+  day1C.appendChild(titleDay1C);
+  day1C.appendChild(imageDay1C);
+  day1C.appendChild(textgrid1Container);
+
+  return day1C;
+}
+
+function createGridDay4() {
+  const day1C = document.createElement('div');
+  const titleDay1C = document.createElement('div');
+  const imageDay1C = document.createElement('div');
+  const imageDay1 = document.createElement('img');
+  const textgrid1Container = document.createElement('div');
+  const textNumberG1 = document.createElement('div');
+  const textFormatG1 = document.createElement('div');
+
+  day1C.className = 'day-container';
+
+  textNumberG1.textContent = '0';
+  textNumberG1.className = 'number-grid';
+  textFormatG1.className = 'format-grid';
+  textFormatG1.textContent = '°F';
+  titleDay1C.textContent = 'Day 4';
+  titleDay1C.className = 'titleday';
+  textgrid1Container.style.display = 'flex';
+  imageDay1.src = './img/animated/night.svg';
+  imageDay1.className = 'image-day';
+  imageDay1C.className = 'imageday-container';
+  textgrid1Container.className = 'day-description';
+  textgrid1Container.appendChild(textNumberG1);
+  textgrid1Container.appendChild(textFormatG1);
+  imageDay1C.appendChild(imageDay1);
+  day1C.appendChild(titleDay1C);
+  day1C.appendChild(imageDay1C);
+  day1C.appendChild(textgrid1Container);
+
+  return day1C;
+}
+
+function createGridDay5() {
+  const day1C = document.createElement('div');
+  const titleDay1C = document.createElement('div');
+  const imageDay1C = document.createElement('div');
+  const imageDay1 = document.createElement('img');
+  const textgrid1Container = document.createElement('div');
+  const textNumberG1 = document.createElement('div');
+  const textFormatG1 = document.createElement('div');
+
+  day1C.className = 'day-container';
+
+  textNumberG1.textContent = '0';
+  textNumberG1.className = 'number-grid';
+  textFormatG1.className = 'format-grid';
+  textFormatG1.textContent = '°F';
+  titleDay1C.textContent = 'Day 5';
+  titleDay1C.className = 'titleday';
+  textgrid1Container.style.display = 'flex';
+  imageDay1.src = './img/animated/night.svg';
+  imageDay1.className = 'image-day';
+  imageDay1C.className = 'imageday-container';
+  textgrid1Container.className = 'day-description';
+  textgrid1Container.appendChild(textNumberG1);
+  textgrid1Container.appendChild(textFormatG1);
+  imageDay1C.appendChild(imageDay1);
+  day1C.appendChild(titleDay1C);
+  day1C.appendChild(imageDay1C);
+  day1C.appendChild(textgrid1Container);
+
+  return day1C;
+}
 export default createGridDays;
