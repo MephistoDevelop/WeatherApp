@@ -170,6 +170,9 @@ body {
 }
 
 @media screen and (min-width: 510px) and (max-width: 900px) {
+  body {
+    height: 600px !important;
+  }
   .day-container {
     width: 17%;
   }
@@ -204,6 +207,9 @@ body {
 
   #navcontent {
     margin: 10px 5%;
+  }
+  #temp-container {
+    width: 100%;
   }
   #text-description {
     width: 80%;
