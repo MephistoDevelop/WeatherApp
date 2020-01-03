@@ -27,7 +27,7 @@ function createGridDay1() {
   titleDay1C.textContent = 'Day 1';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
-  imageDay1.src = './img/animated/night.svg';
+  imageDay1.src = './img/animated/rainy-1.svg';
   imageDay1.className = 'image-day';
   imageDay1C.className = 'imageday-container';
   textgrid1Container.className = 'day-description';
@@ -59,7 +59,7 @@ function createGridDay2() {
   titleDay1C.textContent = 'Day 2';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
-  imageDay1.src = './img/animated/night.svg';
+  imageDay1.src = './img/animated/thunder.svg';
   imageDay1.className = 'image-day';
   imageDay1C.className = 'imageday-container';
   textgrid1Container.className = 'day-description';
@@ -91,7 +91,7 @@ function createGridDay3() {
   titleDay1C.textContent = 'Day 3';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
-  imageDay1.src = './img/animated/night.svg';
+  imageDay1.src = './img/animated/snowy-1.svg';
   imageDay1.className = 'image-day';
   imageDay1C.className = 'imageday-container';
   textgrid1Container.className = 'day-description';
@@ -123,7 +123,7 @@ function createGridDay4() {
   titleDay1C.textContent = 'Day 4';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
-  imageDay1.src = './img/animated/night.svg';
+  imageDay1.src = './img/animated/rainy-7.svg';
   imageDay1.className = 'image-day';
   imageDay1C.className = 'imageday-container';
   textgrid1Container.className = 'day-description';
@@ -155,7 +155,7 @@ function createGridDay5() {
   titleDay1C.textContent = 'Day 5';
   titleDay1C.className = 'titleday';
   textgrid1Container.style.display = 'flex';
-  imageDay1.src = './img/animated/night.svg';
+  imageDay1.src = './img/animated/cloudy-day-1.svg';
   imageDay1.className = 'image-day';
   imageDay1C.className = 'imageday-container';
   textgrid1Container.className = 'day-description';
