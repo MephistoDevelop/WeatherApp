@@ -99,7 +99,7 @@ function showNavbar() {
 function getData() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
@@ -152,7 +152,7 @@ function getData() {
 function getDataDay1() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
@@ -197,7 +197,7 @@ function getDataDay1() {
 function getDataDay2() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
@@ -241,7 +241,7 @@ function getDataDay2() {
 function getDataDay3() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
@@ -285,7 +285,7 @@ function getDataDay3() {
 function getDataDay4() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
@@ -329,7 +329,7 @@ function getDataDay4() {
 function getDataDay5() {
   let city = document.getElementById('search-box').value;
   const response = fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=2a34c0d5ae373ea1442c4619767d8f09&units=metric`,
     { mode: 'cors' }
   )
     .then(function(response) {
