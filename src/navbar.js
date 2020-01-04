@@ -177,7 +177,7 @@ function getDataDay1() {
         var d = new Date(date);
         var dayName = days[d.getDay()];
         temp = result['list'][7]['main']['temp'];
-        tempday1 = temp;
+        tempday1 = temp | 0;
         weather = result['list'][7]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day1');
         const weatherC = document.getElementById('title-day1');
