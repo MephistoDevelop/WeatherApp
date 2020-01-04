@@ -25,6 +25,7 @@ function createGridDay1() {
   textNumberG1.id = 'temp-day1';
   textFormatG1.className = 'format-grid';
   textFormatG1.textContent = '°C';
+  textFormatG1.id = 'temp-day1-format';
   titleDay1C.textContent = 'Day 1';
   titleDay1C.className = 'titleday';
   titleDay1C.id = 'title-day1';
@@ -54,7 +55,8 @@ function createGridDay2() {
   const textFormatG1 = document.createElement('div');
 
   day1C.className = 'day-container';
-
+  textNumberG1.id = 'temp-day2';
+  textFormatG1.id = 'temp-day2-format';
   titleDay1C.id = 'title-day2';
   textNumberG1.textContent = '0';
   textNumberG1.className = 'number-grid';
@@ -87,7 +89,8 @@ function createGridDay3() {
   const textgrid1Container = document.createElement('div');
   const textNumberG1 = document.createElement('div');
   const textFormatG1 = document.createElement('div');
-
+  textNumberG1.id = 'temp-day3';
+  textFormatG1.id = 'temp-day3-format';
   day1C.className = 'day-container';
   textNumberG1.textContent = '0';
   textNumberG1.className = 'number-grid';
@@ -123,7 +126,8 @@ function createGridDay4() {
   const textFormatG1 = document.createElement('div');
 
   day1C.className = 'day-container';
-
+  textNumberG1.id = 'temp-day4';
+  textFormatG1.id = 'temp-day4-format';
   textNumberG1.textContent = '0';
   textNumberG1.id = 'temp-day4';
   textNumberG1.className = 'number-grid';
@@ -158,7 +162,8 @@ function createGridDay5() {
   const textFormatG1 = document.createElement('div');
 
   day1C.className = 'day-container';
-
+  textNumberG1.id = 'temp-day5';
+  textFormatG1.id = 'temp-day5-format';
   textNumberG1.textContent = '0';
   textNumberG1.id = 'temp-day5';
   textNumberG1.className = 'number-grid';

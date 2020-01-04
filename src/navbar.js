@@ -164,7 +164,7 @@ function getDataDay1() {
           date = '',
           weather = '';
 
-        date = result['list'][6]['dt_txt'];
+        date = result['list'][7]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -176,16 +176,14 @@ function getDataDay1() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][6]['main']['temp'];
+        temp = result['list'][7]['main']['temp'];
         tempday1 = temp;
-        weather = result['list'][6]['weather'][0]['main'];
+        weather = result['list'][7]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day1');
         const weatherC = document.getElementById('title-day1');
         tempC.innerText = temp | 0;
         weatherC.innerText = dayName;
         togleimagesDay1(weather);
-        console.log(`Weather:${weather}  Temp:${temp} date: ${dayName} `);
-        console.log(result);
       });
     })
     .catch(function(err) {
@@ -209,7 +207,7 @@ function getDataDay2() {
           date = '',
           weather = '';
 
-        date = result['list'][12]['dt_txt'];
+        date = result['list'][15]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -221,8 +219,9 @@ function getDataDay2() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][12]['main']['temp'];
-        weather = result['list'][12]['weather'][0]['main'];
+        temp = result['list'][15]['main']['temp'];
+        tempday2 = temp | 0;
+        weather = result['list'][15]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day2');
         const weatherC = document.getElementById('title-day2');
         tempC.innerText = temp | 0;
@@ -253,7 +252,7 @@ function getDataDay3() {
           date = '',
           weather = '';
 
-        date = result['list'][20]['dt_txt'];
+        date = result['list'][22]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -265,8 +264,9 @@ function getDataDay3() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][20]['main']['temp'];
-        weather = result['list'][20]['weather'][0]['main'];
+        temp = result['list'][22]['main']['temp'];
+        tempday3 = temp | 0;
+        weather = result['list'][22]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day3');
         const weatherC = document.getElementById('title-day3');
         tempC.innerText = temp | 0;
@@ -297,7 +297,7 @@ function getDataDay4() {
           date = '',
           weather = '';
 
-        date = result['list'][31]['dt_txt'];
+        date = result['list'][29]['dt_txt'];
         var days = [
           'Sunday',
           'Monday',
@@ -309,8 +309,9 @@ function getDataDay4() {
         ];
         var d = new Date(date);
         var dayName = days[d.getDay()];
-        temp = result['list'][31]['main']['temp'];
-        weather = result['list'][31]['weather'][0]['main'];
+        temp = result['list'][29]['main']['temp'];
+        tempday4 = temp | 0;
+        weather = result['list'][29]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day4');
         const weatherC = document.getElementById('title-day4');
         tempC.innerText = temp | 0;
@@ -354,6 +355,7 @@ function getDataDay5() {
         var d = new Date(date);
         var dayName = days[d.getDay()];
         temp = result['list'][38]['main']['temp'];
+        tempday5 = temp | 0;
         weather = result['list'][38]['weather'][0]['main'];
         const tempC = document.getElementById('temp-day5');
         const weatherC = document.getElementById('title-day5');
