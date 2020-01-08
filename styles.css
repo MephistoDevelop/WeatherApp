@@ -76,6 +76,14 @@ body {
   border-radius: 15px;
 }
 
+#footer-text {
+  text-align: center;
+  position: absolute;
+  top: 555px;
+  color: white;
+  font-weight: bold;
+  left: 42%;
+}
 #location-text {
   color: white;
   font-size: 18px;
@@ -135,6 +143,9 @@ body {
   text-shadow: 0px 0px 3px black;
 }
 
+#radio-f {
+  margin-left: 5%;
+}
 #search-box {
   width: 70%;
   height: 20px;
@@ -179,6 +190,7 @@ body {
 
 #toggle-temp {
   min-width: 80px;
+  margin-left: 5%;
 }
 
 #weather-type {
@@ -205,6 +217,9 @@ body {
   #data-container {
     margin: 2% 5%;
   }
+  #footer-text {
+    top: 86%;
+  }
   #location-text {
     font-size: 12px;
   }
@@ -228,10 +243,19 @@ body {
     margin: 2% 5%;
   }
 
+  .day-container {
+    margin: 10px 0;
+  }
+
   #description-container {
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
+  }
+
+  #footer-text {
+    left: 27%;
+    top: 248vh;
   }
 
   #grid-container {
