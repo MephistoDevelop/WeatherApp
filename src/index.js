@@ -7,5 +7,5 @@ import showContent from './contentContainer';
   footer.id = 'footer-text';
   mainContainer.appendChild(showNavbar());
   showContent();
-  mainContainer.appendChild(footer);
+  document.body.appendChild(footer);
 })();
