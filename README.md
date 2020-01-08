@@ -2,7 +2,7 @@
 
 > Project taked from Microverse Curriculum from [The Odin Page project Site]().
 
-![screenshot](./pageseafood.png)
+![screenshot](./dist/img/desktop.png)
 
 Javascript with Webpack project from [The Odin Project curriculum](https://www.theodinproject.com/courses/javascript/lessons/working-with-apis)
 
