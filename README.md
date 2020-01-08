@@ -1,8 +1,10 @@
 # Weather App API webrequest example
 
 > Project taked from Microverse Curriculum from [The Odin Page project Site]().
-
+### Desktop view
 ![screenshot](./dist/img/desktop.png)
+
+### Mobile view
 ![screenshot](./dist/img/mobile.png)
 
 Javascript with Webpack project from [The Odin Project curriculum](https://www.theodinproject.com/courses/javascript/lessons/working-with-apis)
