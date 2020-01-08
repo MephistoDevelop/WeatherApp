@@ -1,8 +1,11 @@
 # Weather App API webrequest example
 
 > Project taked from Microverse Curriculum from [The Odin Page project Site]().
+### Desktop view
+![screenshot](./dist/img/desktop.png)
 
-![screenshot](./pageseafood.png)
+### Mobile view
+![screenshot](./dist/img/mobile.png)
 
 Javascript with Webpack project from [The Odin Project curriculum](https://www.theodinproject.com/courses/javascript/lessons/working-with-apis)
 
@@ -94,7 +97,18 @@ To deploy the application and see it on the browser you can use npm to do that t
 `npm run build`
 `npm i -D webpack-dev-server`
 `npm i browser-sync --save`
+''
 ```
+
+To Run the Linter files you will need to run this commands on the terminal :
+
+```
+`npm install eslint eslint-config-airbnb --save-dev`
+`npx eslint --init`
+`npx eslint`
+```
+
+after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
 
 ## Authors
 
