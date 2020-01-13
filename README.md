@@ -102,7 +102,7 @@ To deploy the application and see it on the browser you can use npm to do that t
 `npm i browser-sync --save`
 ''
 
-
+```
 To Run the Linter files you will need to run this commands on the terminal :
 
 ```
