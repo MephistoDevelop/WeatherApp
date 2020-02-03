@@ -209,7 +209,7 @@ body {
 
 @media screen and (min-width: 510px) and (max-width: 900px) {
   body {
-    height: 600px !important;
+    height:98vh;
   }
   .day-container {
     width: 17%;
