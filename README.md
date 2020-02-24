@@ -131,7 +131,7 @@ after you will need to enter to [Stickler Page](https://stickler-ci.com/) and ac
 - Twitter: [@MephistoDevelop](https://twitter.com/MephistoDevelop)
 - Linkedin: [Cristian Hernandez](https://www.linkedin.com/in/cristian-hernandez1992/)
 
-[![Is <username> available for hire?](http://hireable.me/<username>)](http://hireable.me/p/<username>)
+[![Is Cristian Ines Hernandez available for hire?](http://hireable.me/mephistodevelop)](http://hireable.me/p/mephistodevelop)
 
 
 
