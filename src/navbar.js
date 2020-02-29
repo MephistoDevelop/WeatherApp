@@ -1,5 +1,4 @@
 import {
-  changeImages,
   togleimagesDay1,
   togleimagesDay2,
   togleimagesDay3,
