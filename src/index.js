@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import showNavbar from './navbar';
 import showContent from './contentContainer';
 (() => {
@@ -9,3 +10,6 @@ import showContent from './contentContainer';
   showContent();
   mainContainer.appendChild(footer);
 })();
+=======
+document.body.textContent = 'Hello world';
+>>>>>>> 41f12056392f600195772808ce2bec41dea93b13
