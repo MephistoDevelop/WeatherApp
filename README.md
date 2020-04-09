@@ -104,15 +104,10 @@ To deploy the application and see it on the browser you can use npm to do that t
 `npm run build`
 `npm i -D webpack-dev-server`
 `npm i browser-sync --save`
-''
-<<<<<<< HEAD
+
 ```
 
 To Run the Linter files you will need to run this commands on the terminal :
-
-=======
-
-> > > > > > > 41f12056392f600195772808ce2bec41dea93b13
 
 ```
 `npm install eslint eslint-config-airbnb --save-dev`
@@ -132,7 +127,7 @@ To Run the Linter files you will need to run this commands on the terminal :
 
 after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
 
-## Authors
+## Author
 
 👤 **Cristian Ines Hernandez A. - MephistoDevelop**
 
@@ -153,7 +148,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-
-### Author:
-
-[Cristian Ines (MephistoDevelop)](https://github.com/MephistoDevelop)
