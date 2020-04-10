@@ -26,6 +26,11 @@ Javascript with Webpack project from [The Odin Project curriculum](https://www.t
 
 [Live Demo Link](https://mephistodevelop.github.io/WeatherAppExample/)
 
+## Future Features:
+
+- Take current Location
+- Change backgroundacccording to weather.
+
 ## Getting Started
 
 ### Prerequisites
