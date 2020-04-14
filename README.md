@@ -1,6 +1,6 @@
-# Weather App API webrequest example
+# Weather App API web request example
 
-> Project taked from Microverse Curriculum from [The Odin Page project Site]().
+> Project taken from Microverse Curriculum from [The Odin Page project Site]().
 
 ### Desktop view
 
@@ -35,13 +35,13 @@ Javascript with Webpack project from [The Odin Project curriculum](https://www.t
 
 ### Prerequisites
 
--before to run this project you will need to install before webpack and configure the live server on your webpac.config file. you can check more about it on this [page](https://webpack.js.org/guides/installation/) .
+-before running this project you will need to install before webpack and configure the live server on your webpac.config file. you can check more about it on this [page](https://webpack.js.org/guides/installation/).
 [npm install and config: ](https://docs.npmjs.com/cli/install)
 
 ### Setup
 
 To use this project you will need to download this repository and put in on your computer.
-after you will need to install webpack and npm to run correctlly this project.
+after you will need to install webpack and npm to run correctly this project.
 
 in `package.json` file on the rules we are going to put this:
 
@@ -102,7 +102,7 @@ server: { baseDir: ['dist'] },
 
 ### Deployment
 
-To deploy the application and see it on the browser you can use npm to do that task on the server provider by webpack. to run the live server you will need to open your project folder terminal and run this commands:
+To deploy the application and see it on the browser you can use npm to do that task on the server provider by webpack. to run the live server you will need to open your project folder terminal and run these commands:
 
 ```
 `npm install`
@@ -112,17 +112,17 @@ To deploy the application and see it on the browser you can use npm to do that t
 
 ```
 
-To Run the Linter files you will need to run this commands on the terminal :
+To Run the Linter files you will need to run these commands on the terminal :
 
 ```
 `npm install eslint eslint-config-airbnb --save-dev`
 `npx eslint --init`
-`npx eslint`
+`npx client`
 ```
 
 after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
 
-To Run the Linter files you will need to run this commands on the terminal :
+To Run the Linter files you will need to run these commands on the terminal :
 
 ```
 `npm install eslint eslint-config-airbnb --save-dev`
@@ -142,13 +142,13 @@ after you will need to enter to [Stickler Page](https://stickler-ci.com/) and ac
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give an ⭐️ if you like this project!
 
 ## 📝 License
 
