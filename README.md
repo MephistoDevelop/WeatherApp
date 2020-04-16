@@ -12,7 +12,7 @@
 
 Javascript with Webpack project from [The Odin Project curriculum](https://www.theodinproject.com/courses/javascript/lessons/working-with-apis)
 
-## Built With Javascript and Webpack
+## Built With:
 
 - Html,Css,JavaScript
 - Webpack
