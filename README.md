@@ -1,4 +1,4 @@
-# Weather App API web request example
+# Weather App
 
 > Project made with javascript and WebPack framework to fetch information from weather using an external API by consulting the name of the city or country.
 
