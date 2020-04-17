@@ -99,14 +99,18 @@ server: { baseDir: ['dist'] },
 
 ### Deployment
 
-To deploy the application and view it on your browser, open your project folder terminal and run these command:" ; "To run the linter files you will need to run these command on the terminal
+To deploy the application and view it on your browser, open your project folder terminal and run these command:
 
 ```
 `npm install`
 `npm run build`
 `npm i -D webpack-dev-server`
 `npm i browser-sync --save`
+```
 
+To run the linter files you will need to run these command on the terminal
+
+```
 `npm install eslint eslint-config-airbnb --save-dev`
 `npx eslint --init`
 `npx client`
