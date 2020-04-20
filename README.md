@@ -1,6 +1,7 @@
 # Weather App
 
-> Project made with javascript and WebPack framework to fetch information from weather using an external API by consulting the name of the city or country.
+> Weather application made with JavaScript and webpack. Uses HTTP requests to return info from a weather API, and is deployed on GitHub Pages
+
 
 ### Desktop view
 
@@ -14,7 +15,7 @@ Javascript with Webpack project from [The Odin Project curriculum](https://www.t
 
 ## Built With:
 
-- Html,Css,JavaScript
+- HTML,CSS,Javascript
 - Webpack
 - npm manager
 - HTTP Request
@@ -38,9 +39,7 @@ Javascript with Webpack project from [The Odin Project curriculum](https://www.t
 
 ### Setup
 
-To use this project you will need to download this repository onto your computer. Afterwards, you will need to install webpack and npm to correctly run this project. In the package.json file, input this
-
-in `package.json` file on the rules we are going to put this:
+To use this project you will need to download this repository onto your computer. Afterwards, you will need to install webpack and npm to correctly run this project. In the package.json file, input this:
 
 ```
  "scripts": {
@@ -99,7 +98,7 @@ server: { baseDir: ['dist'] },
 
 ### Deployment
 
-To deploy the application and view it on your browser, open your project folder terminal and run these command:
+To deploy the application and view it on your browser, open your project folder terminal and run these commands:
 
 ```
 `npm install`
@@ -115,8 +114,7 @@ To run the linter files you will need to run these command on the terminal
 `npx eslint --init`
 `npx client`
 ```
-
-after you will need to enter to [Stickler Page](https://stickler-ci.com/) and activate your repository.
+Afterwards, open the [Stickler Page](https://stickler-ci.com/) and activate your repository. and activate your repository
 
 ## Author
 
